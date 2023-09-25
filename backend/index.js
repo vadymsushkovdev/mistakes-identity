@@ -9,7 +9,7 @@ const port = 3020
 app.use(cors())
 app.use(express.json())
 
-app.post('/', async (req, res, next) => {
+app.post('/', async (req, res) => {
     try{
         const formData = new FormData()
 
